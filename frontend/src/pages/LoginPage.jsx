@@ -27,7 +27,7 @@ const LoginPage = () => {
     className="max-w-md w-full bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden"
     >
       <div className="p-8"> 
-            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-green-400 to-emerald-500 text-transparent bg-clip-text ">Welcome Back</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-sky-400 to-cyan-500 text-transparent bg-clip-text ">Welcome Back</h2>
             <form onSubmit={handleLogin} >
                 <Input
                     icon={Mail}
@@ -44,7 +44,7 @@ const LoginPage = () => {
                     onChange = {(e) => setPassword(e.target.value)}
                 />
                 <div className="flex items-center mb-6">
-                  <Link to={'/forgot-password'} className="text-sm text-green-400 hover:underline">
+                  <Link to={'/forgot-password'} className="text-sm text-sky-400 hover:underline">
                     Forgot Password?
                   </Link>
                 </div> 
@@ -52,7 +52,7 @@ const LoginPage = () => {
                 {error && <p className='text-red-500 font-semibold mb-2'>{error}</p>}
 
                 <motion.button
-                    className="w-full py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg shadow-lg hover:from-green-600 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition duration-200"
+                    className="w-full py-3 px-4 bg-gradient-to-r from-sky-500 to-cyan-600 text-white font-bold rounded-lg shadow-lg hover:from-sky-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition duration-200"
                     whileHover={{scale: 1.02}}
                     whileTap={{scale:0.98}}   
                     type="submit" 
@@ -65,7 +65,7 @@ const LoginPage = () => {
         <div className="px-8 py-4 bg-gray-900 bg-opacity-50 flex justify-center">
         <p className="text-sm text-gray-400">
             Dont't have an account?{" "}
-            <Link to={"/signup"} className="text-green-400 hover:underline">
+            <Link to={"/signup"} className="text-sky-400 hover:underline">
             Sign Up
             </Link>
         </p>
